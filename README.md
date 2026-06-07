@@ -26,7 +26,7 @@ Meaning:
 g++ -O3 -std=c++20 -pthread main.cpp -o vampire12
 
 ## Run
-./vampire12 < output.out
+./vampire12 > output.out
 
 ## Example Output
 [FOUND] 1010AB35 = 1031 * BA05  (dec: 36099545 = 1765 * 20453)
