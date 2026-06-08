@@ -1,0 +1,17 @@
+Pre-calculating fang profiles...
+Starting search using 12 threads...
+Searching for 4-digit vampire numbers in Base 12...
+--------------------------------------------------
+[FOUND] 1270 = 21 * 70  (Decimal: 2100 = 25 * 84)
+[FOUND] 1A28 = 21 * A8  (Decimal: 3200 = 25 * 128)
+[FOUND] 1924 = 24 * 91  (Decimal: 3052 = 28 * 109)
+[FOUND] 1826 = 26 * 81  (Decimal: 2910 = 30 * 97)
+[FOUND] 1630 = 30 * 61  (Decimal: 2628 = 36 * 73)
+[FOUND] 1350 = 31 * 50  (Decimal: 2220 = 37 * 60)
+[FOUND] 1440 = 40 * 41  (Decimal: 2352 = 48 * 49)
+[FOUND] 47BA = 4A * B7  (Decimal: 8062 = 58 * 139)
+[FOUND] 3760 = 60 * 73  (Decimal: 6264 = 72 * 87)
+[FOUND] 3266 = 62 * 63  (Decimal: 5550 = 74 * 75)
+--------------------------------------------------
+Total found: 10
+Completed in: 0.0015432 seconds.
