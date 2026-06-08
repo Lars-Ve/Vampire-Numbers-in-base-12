@@ -1,0 +1,4 @@
+# Vampire numbers in base 12 (sorted ascending)
+# Total: 0
+# Format: <vampire_b12> = <fang1_b12> * <fang2_b12>  (dec: <vampire> = <f1> * <f2>)
+#
