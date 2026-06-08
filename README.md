@@ -23,7 +23,7 @@ Meaning:
 - K = 6 → 12-digit vampires
 
 ## Build
-g++ -O3 -std=c++20 -pthread main.cpp -o vampire12
+g++ -O3 -std=c++20 -pthread search.cpp -o vampire12
 
 ## Run
 ./vampire12 > output.out
