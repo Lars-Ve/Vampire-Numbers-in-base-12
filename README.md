@@ -19,6 +19,9 @@ Set `K` in the source file:
 const int K = 6;
 
 Meaning:
+- K = 1 → 2-digit vampires (no such numbers exist)
+- K = 2 → 4-digit vampires
+- K = 3 → 6-digit vampires
 - K = 4 → 8-digit vampires
 - K = 5 → 10-digit vampires
 - K = 6 → 12-digit vampires

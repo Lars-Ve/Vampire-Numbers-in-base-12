@@ -14,7 +14,7 @@
 // K = 4 searches for 8-digit vampire numbers (seconds)
 // K = 5 searches for 10-digit vampire numbers (minutes)
 // K = 6 searches for 12-digit vampire numbers (hours)
-const int K = 2; 
+const int K = 6; 
 
 std::mutex mtx;
 int vampire_count = 0;
