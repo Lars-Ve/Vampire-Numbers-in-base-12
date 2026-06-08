@@ -8,12 +8,16 @@
 #include <mutex>
 
 // CONFIGURATION: K is the number of digits for each fang
-// K = 4 searches for 8-digit vampire numbers (milliseconds)
+// K = 1 searches for 2-digit vampire numbers: no such vampire numbers exist
+// K = 2 searches for 4-digit vampire numbers (milliseconds)
+// K = 3 searches for 6-digit vampire numbers (milliseconds)
+// K = 4 searches for 8-digit vampire numbers (seconds)
 // K = 5 searches for 10-digit vampire numbers (minutes)
 // K = 6 searches for 12-digit vampire numbers (hours)
-const int K = 4; 
+const int K = 2; 
 
 std::mutex mtx;
+int vampire_count = 0;
 
 // Helper to convert a number to Base 12 string representation
 std::string to_base12(uint64_t n) {
@@ -76,6 +80,7 @@ void search_vampires(uint64_t a_start, uint64_t a_end,
                 std::cout << "[FOUND] " << to_base12(v) << " = " 
                           << to_base12(a) << " * " << to_base12(b) 
                           << "  (Decimal: " << v << " = " << a << " * " << b << ")\n";
+                vampire_count++;
             }
         }
     }
@@ -123,7 +128,7 @@ int main() {
     std::chrono::duration<double> elapsed = end_time - start_time;
 
     std::cout << "--------------------------------------------------\n";
-    std::cout << "Search completed in " << elapsed.count() << " seconds.\n";
-
+    std::cout << "Total found: " << vampire_count << "\n";
+    std::cout << "Completed in: " << elapsed.count() << " seconds.\n";
     return 0;
 }
