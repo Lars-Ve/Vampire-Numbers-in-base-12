@@ -12,7 +12,8 @@ and automatic multithreading to efficiently scan large numeric ranges.
 - Exact verification to avoid false positives
 - Supports K = 2–6 (up to 12-digit vampire numbers)
 
-## Configuration
+## Searching Vampire Numbers (search.cpp)
+### Configuration
 Set `K` in the source file:
 
 const int K = 6;
@@ -22,11 +23,23 @@ Meaning:
 - K = 5 → 10-digit vampires
 - K = 6 → 12-digit vampires
 
-## Build
+### Build
 g++ -O3 -std=c++20 -pthread search.cpp -o vampire12
 
-## Run
-./vampire12 > output.out
+### Run
+./vampire12 > output_x_digits.out
 
-## Example Output
+### Example Output
 [FOUND] 1010AB35 = 1031 * BA05  (dec: 36099545 = 1765 * 20453)
+
+## Sorting the Vampire Numbers (sort.cpp)
+This sorts the found vampire numbers in ascending order.
+
+### Build
+g++ -std=c++17 -O3 sort.cpp -o sort
+
+### Run
+./sort output_x_digits.out sorted_x.txt
+
+### Example Output
+1270 = 21 * 70  (dec: 2100 = 25 * 84)
